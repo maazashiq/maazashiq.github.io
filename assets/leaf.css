@@ -1,0 +1,9 @@
+.bg-map.bg-map-overlay:before{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);opacity:0;visibility:hidden}
+.bg-map{position:absolute;top:0;left:0;width:100%;height:100%;z-index:0}
+.bg-map.bg-map-overlay:before{position:absolute;top:0;left:0;bottom:0;right:0;content:' ';background-color:#fff;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=70);opacity:.7;z-index:2;-webkit-transition:all .6s ease-in-out;-moz-transition:all .6s ease-in-out;-o-transition:all .6s ease-in-out;transition:all 0.6s ease-in-out}
+.bg-map.bg-map-overlay:after{position:absolute;top:0;left:0;right:0;height:50%;min-height:50vw;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=70);opacity:.7;background-image:linear-gradient(to bottom, #fff, rgba(255,255,255,0));z-index:2;content:' ';pointer-events:none}
+.bg-map.bg-map-overlay.dark:before{background-color:#000}
+.bg-map.bg-map-overlay.dark:after{background-image:linear-gradient(to bottom, #000, transparent)}
+.bg-map.bg-map-overlay.primary:before{background-color:#1E8DEE}
+.bg-map.bg-map-overlay.primary:after{background-image:linear-gradient(to bottom, #1e8dee, rgba(30,141,238,0))}
+.bg-map.bg-map-overlay.toggled:before{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);opacity:0;visibility:hidden}
